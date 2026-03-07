@@ -32,6 +32,9 @@ Before starting development, make sure to apply the following changes:
 uv run pre-commit install
 ```
 
+5. **Configure GitHub Actions permissions**:
+Go to your repository **Settings → Actions → General → Workflow permissions** and enable **"Allow GitHub Actions to create and approve pull requests"** if you want workflows to open PRs automatically.
+
 ## Quick Start
 
 ### Prerequisites
