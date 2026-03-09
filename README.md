@@ -11,29 +11,6 @@ A comprehensive template repository for Python projects, designed to provide a s
 - **CI/CD Ready**: GitHub Actions configuration templates
 - **Development Tools**: Pre-commit hooks and development utilities
 
-## After Cloning or Using as Template
-
-Before starting development, make sure to apply the following changes:
-
-1. **Rename the source folder**: `src/template-python-project/` → `src/<your-project-name>/`
-
-2. **Update `pyproject.toml`**:
-   - Change `name`, `version`, `description`, `authors`, and other metadata fields
-   - Update the package source path to match your renamed `src/` folder
-
-3. **Update pre-commit hook versions** in `.pre-commit-config.yaml` to the latest available:
-   - Check [pre-commit-hooks releases](https://github.com/pre-commit/pre-commit-hooks/releases)
-   - Check [ruff-pre-commit releases](https://github.com/astral-sh/ruff-pre-commit/releases)
-   - Check [mirrors-mypy releases](https://github.com/pre-commit/mirrors-mypy/releases)
-   - You can also check if the commented lines are useful for you.
-
-4. **Install pre-commit hooks**:
-```bash
-uv run pre-commit install
-```
-
-5. **Configure GitHub Actions permissions**:
-Go to your repository **Settings → Actions → General → Workflow permissions** and enable **"Allow GitHub Actions to create and approve pull requests"** if you want workflows to open PRs automatically.
 
 ## Quick Start
 
@@ -44,11 +21,9 @@ Go to your repository **Settings → Actions → General → Workflow permission
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/v-mdev/template-python-projects.git
-cd template-python-projects
-```
+1. Use the template:
+
+Click the button `Use this template` -> `Create a new repository`
 
 2. Install dependencies:
 ```bash
@@ -99,6 +74,30 @@ uv run mypy src/
 ```bash
 uv run pre-commit run --all-files
 ```
+
+
+## After Cloning or Using as Template
+
+Before starting development, make sure to apply the following changes:
+
+1. **Rename the source folder**: `src/template-python-project/` → `src/<your-project-name>/`
+
+2. **Update `pyproject.toml`**:
+   - Change `name`, `version`, `description` and other metadata fields
+
+3. **Update pre-commit hook versions** in `.pre-commit-config.yaml` to the latest available:
+   - Check [pre-commit-hooks releases](https://github.com/pre-commit/pre-commit-hooks/releases)
+   - Check [ruff-pre-commit releases](https://github.com/astral-sh/ruff-pre-commit/releases)
+   - Check [mirrors-mypy releases](https://github.com/pre-commit/mirrors-mypy/releases)
+   - You can also check if the commented lines are useful for you.
+
+4. **Install pre-commit hooks**:
+```bash
+uv run pre-commit install
+```
+
+5. **Configure GitHub Actions permissions**:
+Go to your repository **Settings → Actions → General → Workflow permissions** and enable **"Allow GitHub Actions to create and approve pull requests"** if you want workflows to open PRs automatically.
 
 ## Contributing
 
